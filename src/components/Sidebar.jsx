@@ -7,46 +7,68 @@ function Sidebar() {
 
       <div className="flex flex-col mt-5">
         <NavLink
-          to="/general"
+          to="/uk/general"
           className="border-b border-zinc-200 py-2.5 w-full text-lg hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           General
         </NavLink>
         <NavLink
-          to="/business"
+          to="/uk/business"
           className="border-b border-zinc-200 py-2.5 w-full text-lg hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           Business
         </NavLink>
         <NavLink
-          to="/entertainment"
+          to="/uk/entertainment"
           className="border-b border-zinc-200 py-2.5 w-full text-lg  hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           Entertainment
         </NavLink>
         <NavLink
-          to="/health"
+          to="/uk/health"
           className="border-b border-zinc-200 py-2.5 w-full text-lg  hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           Health
         </NavLink>
         <NavLink
-          to="/science"
+          to="/uk/science"
           className="border-b border-zinc-200 py-2.5 w-full text-lg  hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           Science
         </NavLink>
         <NavLink
-          to="/sports"
+          to="/uk/sports"
           className="border-b border-zinc-200 py-2.5 w-full text-lg hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           Sports
         </NavLink>
         <NavLink
-          to="/technology"
+          to="/uk/tech"
           className="border-b border-zinc-200 py-2.5 w-full text-lg  hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
         >
           Technology
+        </NavLink>
+      </div>
+
+      <h2 className="font-serif text-start text-2xl mt-12">Source</h2>
+      <div className="flex flex-col mt-5">
+      <NavLink
+          to="/cnn"
+          className="border-b border-zinc-200 py-2.5 w-full text-lg hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
+        >
+          CNN
+        </NavLink>
+        <NavLink
+          to="/fox-news"
+          className="border-b border-zinc-200 py-2.5 w-full text-lg hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
+        >
+          Fox News
+        </NavLink>
+        <NavLink
+          to="/bbc-news"
+          className="border-b border-zinc-200 py-2.5 w-full text-lg hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-200"
+        >
+          BBC News
         </NavLink>
       </div>
     </div>

@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {baseCategory, generalUK} from './../API'
-import Response from "./Response";
+import {techUK} from '../../../API'
+import Response from "../../Response";
 
-function General() {
+export default function TechUK() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`${baseCategory}${generalUK}`)
+      .get(`${techUK}`)
       .then((resp) => {
         setNews(resp.data.articles);
       });
@@ -19,4 +19,4 @@ function General() {
   );
 }
 
-export default General;
+

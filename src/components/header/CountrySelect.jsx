@@ -4,13 +4,14 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import India from "./../images/india.png";
-import Australia from "./../images/australia.png";
-import France from "./../images/france.png";
-import Russia from "./../images/russia.png";
-import UK from "./../images/uk.png";
-import USA from "./../images/usa.png";
+import India from "./../../images/india.png";
+import Australia from "./../../images/australia.png";
+import France from "./../../images/france.png";
+import Russia from "./../../images/russia.png";
+import UK from "./../../images/uk.png";
+import USA from "./../../images/usa.png";
 import { createTheme } from "@mui/material/styles";
+import { NavLink } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
@@ -46,33 +47,33 @@ export default function CountrySelect() {
           onChange={handleChange}
         >
           <MenuItem value={India}>
-            <div className="flex items-center">
-              <img src={India} /> India
+            <div>
+              <NavLink to='/ind/general' className="flex items-center"><img src={India} /> India</NavLink>
             </div>
           </MenuItem>
           <MenuItem value={USA}>
-            <div className="flex items-center">
-              <img src={USA} /> USA
+            <div>
+              <NavLink to="/usa/general" className="flex items-center"><img src={USA} /> USA</NavLink>
             </div>
           </MenuItem>
           <MenuItem value={Australia}>
-            <div className="flex items-center">
-              <img src={Australia} /> Australia
+            <div>
+              <NavLink to="/aus/general" className="flex items-center"><img src={Australia} /> Australia</NavLink>
             </div>
           </MenuItem>
           <MenuItem value={Russia}>
-            <div className="flex items-center">
-              <img src={Russia} /> Russia
+            <div>
+              <NavLink to="/rus/general" className="flex items-center"><img src={Russia} /> Russia</NavLink>
             </div>
           </MenuItem>
           <MenuItem value={France}>
-            <div className="flex items-center">
-              <img src={France} /> France
+            <div>
+              <NavLink to="/fr/general" className="flex items-center"><img src={France} /> France</NavLink>
             </div>
           </MenuItem>
           <MenuItem value={UK}>
-            <div className="flex items-center">
-              <img src={UK} /> United Kingdom
+            <div>
+              <NavLink to='/uk/general' className="flex items-center"><img src={UK} /> United Kingdom</NavLink>
             </div>
           </MenuItem>
         </Select>

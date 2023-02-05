@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import search from './../images/search.png'
+import search from './../../images/search.png'
 
 export default function SearchForm() {
   const { register, handleSubmit, formState: { errors } } = useForm();
