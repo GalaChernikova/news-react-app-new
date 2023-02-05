@@ -10,32 +10,33 @@ import Sidebar from "./components/Sidebar";
 import FoxNews from "./components/source/FoxNews";
 import BBCNews from "./components/source/BBCNews";
 import BusinessUK from "./components/country/UK/BusinessUK";
-import EntertUK from './components/country/UK/EntertUK'
-import HealthUK from './components/country/UK/HealthUK'
-import ScienceUK from './components/country/UK/ScienceUK'
-import SportsUK from './components/country/UK/SportsUK'
-import TechUK from './components/country/UK/TechUK'
+import EntertUK from "./components/country/UK/EntertUK";
+import HealthUK from "./components/country/UK/HealthUK";
+import ScienceUK from "./components/country/UK/ScienceUK";
+import SportsUK from "./components/country/UK/SportsUK";
+import TechUK from "./components/country/UK/TechUK";
 import GeneralAus from "./components/country/Aus/GeneralAus";
 import GeneralFr from "./components/country/Fr/GeneralFr";
 import GeneralInd from "./components/country/Ind/GeneralInd";
 import GeneralRus from "./components/country/Rus/GeneralRus";
-import GeneralUSA from "./components/country/USA/GeneralUSA"
+import GeneralUSA from "./components/country/USA/GeneralUSA";
+import MobNav from "./components/header/MobNav";
 
 function App() {
   return (
-    <div className="flex flex-col max-w-screen-xl mx-auto font-sans text-slate-600">
+    <div className="flex flex-col max-w-7xl mx-auto font-sans text-slate-600 xl:m-5">
+      <MobNav />
       <Menu />
 
       <div className="flex justify-between">
-        <Sidebar />
-
+        <div className="md:hidden">
+          <Sidebar />
+        </div>
+        
         <Routes>
           <Route path="*" element={<Main />}></Route>
-          <Route path="/about" element={<About/>}></Route>
+          <Route path="/about" element={<About />}></Route>
           <Route path="/login" element={<Login />}></Route>
-
-
-
 
           <Route path="/uk/general" element={<GeneralUK />}></Route>
           <Route path="/uk/business" element={<BusinessUK />}></Route>
@@ -54,7 +55,6 @@ function App() {
           <Route path="/rus/general" element={<GeneralRus />}></Route>
 
           <Route path="/usa/general" element={<GeneralUSA />}></Route>
-
 
           <Route path="/cnn" element={<CNN />}></Route>
           <Route path="/fox-news" element={<FoxNews />}></Route>

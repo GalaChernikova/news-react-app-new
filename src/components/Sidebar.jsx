@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="flex flex-col w-64 self-start my-5 font-sans text-slate-600 border-r border-zinc-200 pr-4">
+    <div className="flex flex-col w-64 self-start my-5 font-sans text-slate-600 border-r border-zinc-200 pr-4 md:border-r-0 md:w-full">
       <h2 className="font-serif text-start text-2xl">Category</h2>
 
       <div className="flex flex-col mt-5">

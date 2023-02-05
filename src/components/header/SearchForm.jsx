@@ -8,7 +8,7 @@ export default function SearchForm() {
   console.log(errors);
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex items-center">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex items-center lg:mx-8 lg:mb-8 md:mx-0">
       <input type="search" placeholder="Search" {...register("Search", {})}  className="p-2 border border-slate-400 rounded-lg"/>
 
       <button type="submit" className='ml-2.5 w-10'><img src={search}/></button>

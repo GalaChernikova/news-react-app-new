@@ -29,7 +29,7 @@ export default function CountrySelect() {
   };
 
   return (
-    <Box sx={{ minWidth: 200 }}>
+    <Box sx={{ maxWidth: 200 }} className="lg:mx-8 lg:mb-8 md:w-72 md:mx-0 sm:order-last">
       <FormControl fullWidth>
         <InputLabel
           id="demo-simple-select-label"
@@ -46,32 +46,32 @@ export default function CountrySelect() {
           variant="standard"
           onChange={handleChange}
         >
-          <MenuItem value={India}>
+          <MenuItem value={India} disabled>
             <div>
               <NavLink to='/ind/general' className="flex items-center"><img src={India} /> India</NavLink>
             </div>
           </MenuItem>
-          <MenuItem value={USA}>
+          <MenuItem value={USA} disabled>
             <div>
               <NavLink to="/usa/general" className="flex items-center"><img src={USA} /> USA</NavLink>
             </div>
           </MenuItem>
-          <MenuItem value={Australia}>
+          <MenuItem value={Australia} disabled>
             <div>
               <NavLink to="/aus/general" className="flex items-center"><img src={Australia} /> Australia</NavLink>
             </div>
           </MenuItem>
-          <MenuItem value={Russia}>
+          <MenuItem value={Russia} disabled>
             <div>
               <NavLink to="/rus/general" className="flex items-center"><img src={Russia} /> Russia</NavLink>
             </div>
           </MenuItem>
-          <MenuItem value={France}>
+          <MenuItem value={France} disabled>
             <div>
               <NavLink to="/fr/general" className="flex items-center"><img src={France} /> France</NavLink>
             </div>
           </MenuItem>
-          <MenuItem value={UK}>
+          <MenuItem value={UK} selected>
             <div>
               <NavLink to='/uk/general' className="flex items-center"><img src={UK} /> United Kingdom</NavLink>
             </div>
